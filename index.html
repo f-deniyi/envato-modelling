@@ -11,16 +11,21 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Oswald:wght@200;300;400;500;600;700&display=swap"
     rel="stylesheet">
-  <title>Wedding Planner</title>
+  <link rel="icon" href="./assets/images/logo.png">
+  <title>ENVATO MODELLING</title>
 </head>
 
-<body>
+<body data-spy='scroll' data-target='.navbar' data-offset='140'>
   <!---Header-->
   <nav id="top-navbar" class="navbar nav-fill  navbar-expand-lg navbar-dark text-dark shadow fixed-top p-3">
     <div class="container">
       <a href="#hero" class="navbar-brand">
         <img src='./assets/images/logo.png'>
       </a>
+      <div class='mobile-button'>
+        <a class="nav-link  btn btn-navbar rounded-75">Be a model</a>
+      </div>
+       
       <button class="navbar-toggler  text-dark border-0" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -46,15 +51,14 @@
           <li class="nav-item">
             <a class="nav-link" href="#contact-us">Contact Us</a>
           </li>
-          <li class='nav-item ml-2'>
-            <a class="nav-link  btn btn-navbar rounded-75" >Become a model</a>
+          <li class='nav-item ml-2 pc-button'>
+            <a class="nav-link  btn btn-navbar rounded-75">Become a model</a>
           </li>
         </ul>
       </div>
     </div>
 
   </nav>
-
   <header id="hero" class="head">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center">
@@ -62,21 +66,23 @@
           <h1 class="hero-text pb-5 ">
             ENVATO MODEL
           </h1>
-          <div class="hero-subtext text-center">
-            <h3>Premium US Modelling Agency</h3>
+          <div class=" text-center">
+            <h3 class="hero-subtext">Premium US Modelling Agency</h3>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-
+<div class="divider">
+  <img class='img-fluid' width='250px' height='400px' src='./assets/images/left.png'>
+</div>
   <!---About us-->
   <section id="about-us" class='mt-5 py-5'>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="about-us-text">
+      <div class="row mr-0">
+        <div class="col-md-6 pr-0">
+          <div class="about-us-text mr-0">
             <h1 class='about-us-heading mb-4 line-right'>About Our Agency</h1>
             <p class='about-us-body font-inter fs-18 mb-4'> Envato Modelling Agency is aimed at providing young and
               aspiring
@@ -86,18 +92,21 @@
               promoting their corporate creative enterprises. With partners in New York, London, Paris, Barcelona and
               Milan; Envato focuses on discvering new takents and transforming them into working suoperstars.
             </p>
-            <button class='btn btn-custom rounded-75'>Join Us</button>
+            <button class='btn btn-custom mb-5'>Join Us</button>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 p-0">
           <img class=' about-us-image img-fluid' src='./assets/images/about-us.png'>
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Models  -->
   <section id='models' class='py-5'>
+    <div class="divider2">
+      <img class='img-fluid' width='250px' height='400px' src='./assets/images/right.png'>
+    </div>
     <div class="container">
       <h2 class='section-title text-center pb-5'>Our Top Models</h2>
       <div class="cards d-md-flex justify-content-around pb-5">
@@ -132,6 +141,7 @@
     </div>
   </section>
 
+  
 
   <!--Events-->
   <section id="events" class='py-5'>
@@ -140,23 +150,27 @@
         <div class="col-md-7">
           <div class="gallery">
             <div class="d-md-flex justify-content-between mr-3">
-              <div class="first-gallery">
-                <img class='img-fluid mb-5' src="./assets/images/event1.png" alt="">
-                <div class="d-md-flex">
+              <div class="first-gallery ">
+                <div class="mask-group">
+                  <img class='img-fluid mb-5 ' src="./assets/images/Mask Group.png" alt="">
+                  <img class='polygon img-fluid' src="assets/images/polygon.png">
+                </div>
+               
+                <div class="d-flex">
                   <img class='img-fluid mr-auto' src="./assets/images/event2.png">
                   <img class='img-fluid ' src="./assets/images/event3.png">
                 </div>
               </div>
-              <div class="second-gallery d-flex flex-column">
-                <img class='img-fluid mb-auto' src="./assets/images/event5.png">
+              <div class="second-gallery d-md-flex flex-column">
+                <img class='img-fluid mr-auto mb-auto' src="./assets/images/event5.png">
                 <img class='img-fluid ' src="./assets/images/event4.png">
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-5">
-          <div class="about-us-text">
-            <h1 class='about-us-heading mb-4 line-right'>RECENT EVENTS</h1>
+          <div class="events-text">
+            <h1 class='events-heading mb-4 line-right'>RECENT EVENTS</h1>
             <p class='about-us-body font-inter fs-18 mb-4'> Envato Modelling Agency is aimed at providing young and
               aspiring models with a platform to achieve their goals and objectives. The brand seeks to promote models
               by working with local brands as well as promoting models internationally with foreign brands, which seek
@@ -176,8 +190,11 @@
   <section id='services' class='py-5'>
     <div class="container">
       <h2 class='section-title pb-5 text-center'>Our Services</h2>
-      <div class="cards d-md-flex justify-content-around pb-5">
-        <div class='card mb-5 border-light mr-md-5'>
+      <div class=" d-md-flex justify-content-around pb-5">
+        <div class="service1"></div>
+        <div class="service"></div>
+        <div class="service"></div>
+        <div class='card  mb-5 border-light mr-md-5'>
           <img class='' class='card-img-top' src="./assets/images/services1.png" alt="services1">
           <div class="card-body p-0">
             <h2 class="card-title mt-5">Fashion Shoot </h2>
@@ -188,10 +205,10 @@
               result</p>
           </div>
         </div>
-        <div class='card mb-5  border-light  mr-md-5'>
-          <img class='' class='card-img-top' src="./assets/images/services2.png" alt="services2">
+        <div class='card mb-5   border-light  mr-md-5'>
+          <img class='' class='card-img-top move-right' src="./assets/images/services2.png" alt="services2">
           <div class="card-body p-0">
-            <h2 class="card-title mt-5">Catwalk Shoot </h2>
+            <h2 class="card-title move-right mt-5">Catwalk Shoot </h2>
             <hr>
             <p class="card-text mt-4">The converted file will be stored for 24 hours (1 day), during which time you can
               download it up to 10 times. After 24 hours, these files will be automatically deleted and will no longer
@@ -202,7 +219,7 @@
       </div>
       <div class="cards d-md-flex justify-content-around pb-5">
         <div class='card mb-5  border-light  mr-md-5'>
-          <img class='' class='card-img-top' src="./assets/images/services2.png" alt="services2">
+          <img class='' class='card-img-top' src="./assets/images/services3.png" alt="services2">
           <div class="card-body p-0">
             <h2 class="card-title mt-5">Professional Models</h2>
             <hr>
@@ -212,10 +229,10 @@
               result</p>
           </div>
         </div>
-        <div class='card mb-5 border-light mr-md-5'>
-          <img class='' class='card-img-top' src="./assets/images/services3.png" alt="services3">
+        <div class='card mb-5 card-left border-light mr-md-5'>
+          <img class='' class='card-img-top move-right' src="./assets/images/services4.png" alt="services3">
           <div class="card-body p-0">
-            <h2 class="card-title mt-5">Exhibtion Shows</h2>
+            <h2 class="card-title mt-5 move-right">Exhibtion Shows</h2>
             <hr>
             <p class="card-text mt-4">The converted file will be stored for 24 hours (1 day), during which time you can
               download it up to 10 times. After 24 hours, these files will be automatically deleted and will no longer
@@ -225,31 +242,29 @@
         </div>
       </div>
     </div>
+
     </div>
   </section>
 
   <!---Testimonial-->
-  <section id="testimonial" class='py-5'>
-    <div class="container">
-      <div class="row">
-        <div class="d-md-flex">
-          <div class=w-50>
-            <img class=' img-fluid' src='./assets/images/testimonial.png'>
-          </div>
-          <div class="testimonies w-50 p-5">
-            <div class="align-items-center p-5">
-              <h2 class='text-white testimonial-text pt-5'>Envato Modelling Agency helped bring competent models for our Dior Spring Collection. You
-                should try them</h2>
-            </div>
-            <div class="clients text-white  pl-5">
-              <p class='mb-3 text-white'>Claire Bush</p>
-              <p class='editor'>Editor-In-Chief Dior</p>
-              <div class='slide-dot text-center mt-5'>
-                <span class="dot "></span>
-                <span class="dot active-dot"></span>
-                <span class="dot"></span>
-              </div>
-            </div>
+  <section id="testimonial" class='pt-5 pb-3'>
+    <div class="d-md-flex">
+      <div class='w-50'>
+        <img class='img-fluid testimonial-img' src='./assets/images/testimonial.png'>
+      </div>
+      <div class="testimonies w-50 p-5 ">
+        <div class="align-items-center p-5">
+          <h2 class='text-white testimonial-text pt-5'>Envato Modelling Agency helped bring competent models for our
+            Dior Spring Collection. You
+            should try them</h2>
+        </div>
+        <div class="clients text-white  pl-5">
+          <p class='mb-3 text-white'>Claire Bush</p>
+          <p class='editor'>Editor-In-Chief Dior</p>
+          <div class='slide-dot text-center mt-5'>
+            <span class="dot "></span>
+            <span class="dot active-dot"></span>
+            <span class="dot"></span>
           </div>
         </div>
       </div>
@@ -259,22 +274,24 @@
 
 
   <!--clients-->
-  <section class='my-3 py-5'>
+  <section id='' class='client-section my-3 py-5'>
     <div class="d-md-flex align-items-center">
       <div class="container">
-        <div class="justify-content-center"></div>
-        <h2 class='section-title  text-center pb-4'>Our Clients</h2> 
-          <div class='clients d-md-flex justify-content-between mb-4 align-items-center py-3'>
+        <h2 class='section-title  text-center pb-4'>Our Clients</h2>
+        <div class='clients-logo'>
+          <div class='client d-md-flex justify-content-between mb-4 align-items-center py-3'>
             <img class="img-fluid" src="./assets/images/ZARA.png" alt='logo'>
             <img class="img-fluid" src="./assets/images/CALVIN KLEIN.png" alt='logo'>
             <img class="img-fluid" src="./assets/images/prada.png" alt='logo'>
-            <img  class="img-fluid" src="./assets/images/gucci.png" alt='logo'>
+            <img class="img-fluid" src="./assets/images/gucci.png" alt='logo'>
           </div>
-          <div class="d-md-flex justify-content-center align-items-center py-3">
+          <div class="client d-md-flex justify-content-center align-items-center py-3">
             <img class="img-fluid mx-auto" src="./assets/images/MD.png" alt='logo'>
             <img class="img-fluid mr-auto" src="./assets/images/D K N Y.png" alt='logo'>
             <img class="img-fluid mr-auto" src="./assets/images/Ralph Lauren.png" alt='logo'>
           </div>
+        </div>
+        
       </div>
     </div>
 
@@ -284,29 +301,26 @@
   <section id="contact-us" class='mt-5 py-5'>
     <div class="container">
       <h2 class='section-title section-title-white text-center text-white pb-5'>Contact Us</h2>
-        <div class="text-center text-white  justify-content-center">
-          <p class='text-white'>660-218-6118</p>
-          <p class='text-white'>250-218-6128</p>
-          <p class='text-white'>info@envatomodel.com</p>
-          <div class="social">
-            <img src="./assets/images/facebook.png" alt="">
-            <img src="./assets/images/twitter.png" alt="">
-            <img src="./assets/images/pinterest.png" alt="">
-            <img src="./assets/images/instagram.png" alt="">
-          </div>
+      <div class="text-center text-white  justify-content-center">
+        <p class='text-white'>660-218-6118</p>
+        <p class='text-white'>250-218-6128</p>
+        <p class='text-white'>info@envatomodel.com</p>
+        <div class="social">
+          <img src="./assets/images/facebook.png" alt="">
+          <img src="./assets/images/twitter.png" alt="">
+          <img src="./assets/images/pinterest.png" alt="">
+          <img src="./assets/images/instagram.png" alt="">
         </div>
+      </div>
     </div>
   </section>
-
   <!---footer-->
   <footer class='py-4'>
     <div class='container'>
-        <div class='text-white d-flex justify-content-between align-items-center'>
-          <p class='footer-text mb-0 text-white'>2020 Envato Modelling Agency</p>
-          <p class='footer-text mb-0 text-white'>Coded by F3mmie|HNG</p>
-        </div>
+      <div class='text-white text-center'>
+        <p class='footer-text txt-center mb-0 text-white'>2020 Envato Modelling Agency</p>
+      </div>
   </footer>
-  <!---end of footer-->
   <!-- JS, Popper.js, and jQuery -->
   <script src='./assets/script.js'></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -319,6 +333,5 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </body>
-
 
 </html>
